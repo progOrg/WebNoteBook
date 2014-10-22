@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	 version="3.0">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+
+    
+    <servlet>
+        <servlet-name>stertServlet</servlet-name>
+        <servlet-class>Servlets.StertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>stertServlet</servlet-name>
+        <url-pattern>/stertServlet</url-pattern>
+    </servlet-mapping>
+    
+
+
+    <servlet>
+        <servlet-name>logServlet</servlet-name>
+        <servlet-class>Servlets.LogServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logServlet</servlet-name>
+        <url-pattern>/logServlet</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
